@@ -18,7 +18,7 @@ public class GetnetService : BaseHttpService, IGetnetService
 
     private const string _getnetPixQrCodeUri = "https://site.getnet.com.br/pix/";
     
-    public Task<byte[]> GetPixQrCode(PixRequestDto requestDto)
+    public Task<byte[]> GetPixQrCode(GetnetPixRequestDto requestDto)
     {
         return Task.FromResult(QrCodeFactory.GenerateQrCode(
             $"{_getnetPixQrCodeUri}?customerid={requestDto.CustomerId}"

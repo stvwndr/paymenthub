@@ -4,5 +4,5 @@ namespace PaymentHub.Getnet.Infra.Services.Interfaces;
 
 public interface IGetnetService
 {
-    Task<byte[]> GetPixQrCode(PixRequestDto requestDto);
+    Task<byte[]> GetPixQrCode(GetnetPixRequestDto requestDto);
 }

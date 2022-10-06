@@ -2,6 +2,7 @@ using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using PaymentHub.Core;
 using PaymentHub.Core.Notifications.Interfaces;
+using PaymentHub.Gateway.Application.Features.PaymentHubAme.Commands;
 using PaymentHub.Gateway.Application.Features.PaymentHubGetnet.Commands;
 using PaymentHub.Gateway.Application.Features.PaymentHubPagSeguro.Commands;
 using PaymentHub.Gateway.Infra;
@@ -68,7 +69,7 @@ app.MapPost("/payment/pagseguro", async (
         ? Results.BadRequest(notificationHandler.NotificationResponse)
         : Results.Created("payment", response);
 });
-app.MapGet("/payment/pix-qrcode/customerId", async (
+app.MapGet("/payment/pix/qrcode/{customerId}", async (
     Guid customerId,
     [FromServices] IMediator mediator,
     [FromServices] INotificationHandler notificationHandler) =>
@@ -81,6 +82,31 @@ app.MapGet("/payment/pix-qrcode/customerId", async (
     return notificationHandler.HasNotifications
         ? Results.BadRequest(notificationHandler.NotificationResponse)
         : Results.Ok((string?)response);
+});
+app.MapGet("/payment/ame/qrcode/{customerId}", async (
+    Guid customerId,
+    [FromServices] IMediator mediator,
+    [FromServices] INotificationHandler notificationHandler) =>
+{
+    var response = await mediator.Send(new AmeQrCodeCommand
+    {
+        CustomerId = customerId
+    });
+
+    return notificationHandler.HasNotifications
+        ? Results.BadRequest(notificationHandler.NotificationResponse)
+        : Results.Ok((string?)response);
+});
+app.MapPost("/payment/ame/giftcard", async (
+    [FromBody] AmeGiftCardPaymentCommand command,
+    [FromServices] IMediator mediator,
+    [FromServices] INotificationHandler notificationHandler) =>
+{
+    var response = await mediator.Send(command);
+
+    return notificationHandler.HasNotifications
+        ? Results.BadRequest(notificationHandler.NotificationResponse)
+        : Results.Created("payment", response);
 });
 
 app.Run();

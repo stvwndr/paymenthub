@@ -6,7 +6,7 @@ using PaymentHub.Gateway.Infra.Services.Interfaces;
 
 namespace PaymentHub.Gateway.Infra.Services;
 
-internal class PaymentHubGetnetService : BaseHttpService, IPaymentHubGetnetService
+public class PaymentHubGetnetService : BaseHttpService, IPaymentHubGetnetService
 {
     public PaymentHubGetnetService(HttpClient httpClient,
         ILogger<PaymentHubGetnetService> logger,

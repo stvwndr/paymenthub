@@ -1405,11 +1405,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\wander.costa\\Documents\\Pessoal\\Projetos\\Pessoal\\PucMinas\\PaymentHub\\src\\PaymentHub.Gateway.Api\\PaymentHub.Gateway.Api.csproj",
+      "projectUniqueName": "C:\\Users\\wander.costa\\Documents\\Pessoal\\Projetos\\Pessoal\\PucMinas\\paymenthub\\src\\PaymentHub.Gateway.Api\\PaymentHub.Gateway.Api.csproj",
       "projectName": "PaymentHub.Gateway.Api",
-      "projectPath": "C:\\Users\\wander.costa\\Documents\\Pessoal\\Projetos\\Pessoal\\PucMinas\\PaymentHub\\src\\PaymentHub.Gateway.Api\\PaymentHub.Gateway.Api.csproj",
+      "projectPath": "C:\\Users\\wander.costa\\Documents\\Pessoal\\Projetos\\Pessoal\\PucMinas\\paymenthub\\src\\PaymentHub.Gateway.Api\\PaymentHub.Gateway.Api.csproj",
       "packagesPath": "C:\\Users\\wander.costa\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\wander.costa\\Documents\\Pessoal\\Projetos\\Pessoal\\PucMinas\\PaymentHub\\src\\PaymentHub.Gateway.Api\\obj\\",
+      "outputPath": "C:\\Users\\wander.costa\\Documents\\Pessoal\\Projetos\\Pessoal\\PucMinas\\paymenthub\\src\\PaymentHub.Gateway.Api\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\Offline Packages",
@@ -1435,8 +1435,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\wander.costa\\Documents\\Pessoal\\Projetos\\Pessoal\\PucMinas\\PaymentHub\\src\\PaymentHub.Gateway.Application\\PaymentHub.Gateway.Application.csproj": {
-              "projectPath": "C:\\Users\\wander.costa\\Documents\\Pessoal\\Projetos\\Pessoal\\PucMinas\\PaymentHub\\src\\PaymentHub.Gateway.Application\\PaymentHub.Gateway.Application.csproj"
+            "C:\\Users\\wander.costa\\Documents\\Pessoal\\Projetos\\Pessoal\\PucMinas\\paymenthub\\src\\PaymentHub.Gateway.Application\\PaymentHub.Gateway.Application.csproj": {
+              "projectPath": "C:\\Users\\wander.costa\\Documents\\Pessoal\\Projetos\\Pessoal\\PucMinas\\paymenthub\\src\\PaymentHub.Gateway.Application\\PaymentHub.Gateway.Application.csproj"
             }
           }
         }

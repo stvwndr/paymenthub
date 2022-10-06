@@ -9,9 +9,9 @@ public class GetPixQrCodeCommand : IRequest<byte[]>
     public Guid CustomerId { get; set; }
 
 
-    public static explicit operator PixRequestDto(GetPixQrCodeCommand request)
+    public static explicit operator GetnetPixRequestDto(GetPixQrCodeCommand request)
     {
-        return new PixRequestDto
+        return new GetnetPixRequestDto
         {
             TransactionId = request.TransactionId,
             CustomerId = request.CustomerId

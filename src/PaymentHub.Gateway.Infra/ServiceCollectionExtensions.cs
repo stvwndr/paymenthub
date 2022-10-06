@@ -27,5 +27,12 @@ public static class ServiceCollectionExtensions
             c.BaseAddress = new Uri(configuration["Services:PaymentHubGetnetUri"]);
             c.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
         });
+
+        services.AddHttpClient<IPaymentHubAmeService, PaymentHubAmeService>(c =>
+        {
+            c.DefaultRequestHeaders.Accept.Clear();
+            c.BaseAddress = new Uri(configuration["Services:PaymentHubAmeUri"]);
+            c.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+        });
     }
 }

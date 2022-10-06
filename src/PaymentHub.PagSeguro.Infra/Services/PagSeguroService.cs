@@ -18,7 +18,6 @@ public class PagSeguroService : BaseHttpService, IPagSeguroService
 
     public Task<SendPaymentResponseDto> SendPayment(SendPaymentRequestDto request)
     {
-        //Mock
         return Task.FromResult(
             new SendPaymentResponseDto
             {

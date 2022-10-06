@@ -2,7 +2,6 @@ using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using PaymentHub.Core;
 using PaymentHub.Core.Notifications.Interfaces;
-using PaymentHub.Getnet.Application.Dtos;
 using PaymentHub.Getnet.Application.Features.Payment.Commands;
 using PaymentHub.Getnet.Infra;
 using Serilog;

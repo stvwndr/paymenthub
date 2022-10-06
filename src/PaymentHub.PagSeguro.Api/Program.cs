@@ -58,13 +58,13 @@ app.MapPost("/payment", async (
     [FromBody] CreatePaymentCommand command, 
     [FromServices] IMediator mediator, 
     [FromServices] INotificationHandler notificationHandler) =>
-    {
-        var response = await mediator.Send(command);
+{
+    var response = await mediator.Send(command);
 
-        return notificationHandler.HasNotifications
-            ? Results.BadRequest(notificationHandler.NotificationResponse)
-            : Results.Created("payment", response);
-    });
+    return notificationHandler.HasNotifications
+        ? Results.BadRequest(notificationHandler.NotificationResponse)
+        : Results.Created("payment", response);
+});
 
 
 app.Run();

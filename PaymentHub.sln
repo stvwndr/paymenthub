@@ -33,9 +33,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PaymentHub.Getnet.Infra", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PaymentHub.Getnet.Application", "src\PaymentHub.Getnet.Application\PaymentHub.Getnet.Application.csproj", "{4F195BC6-FBA5-4507-8692-37010012D4DC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PaymentHub.Ame.Infra", "src\PaymentHub.Ame.Infra\PaymentHub.Ame.Infra.csproj", "{1814C536-320F-43B3-849F-0DB397B1763F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PaymentHub.Ame.Infra", "src\PaymentHub.Ame.Infra\PaymentHub.Ame.Infra.csproj", "{1814C536-320F-43B3-849F-0DB397B1763F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PaymentHub.Ame.Application", "src\PaymentHub.Ame.Application\PaymentHub.Ame.Application.csproj", "{0B1D02EC-00AE-4EBF-995F-65E6B85A383B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PaymentHub.Ame.Application", "src\PaymentHub.Ame.Application\PaymentHub.Ame.Application.csproj", "{0B1D02EC-00AE-4EBF-995F-65E6B85A383B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PaymentHub.Ame.Api", "src\PaymentHub.Ame.Api\PaymentHub.Ame.Api.csproj", "{5126BEC9-91D1-4B86-BA3E-401680A4468A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -91,6 +93,10 @@ Global
 		{0B1D02EC-00AE-4EBF-995F-65E6B85A383B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0B1D02EC-00AE-4EBF-995F-65E6B85A383B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0B1D02EC-00AE-4EBF-995F-65E6B85A383B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5126BEC9-91D1-4B86-BA3E-401680A4468A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5126BEC9-91D1-4B86-BA3E-401680A4468A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5126BEC9-91D1-4B86-BA3E-401680A4468A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5126BEC9-91D1-4B86-BA3E-401680A4468A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -112,6 +118,7 @@ Global
 		{4F195BC6-FBA5-4507-8692-37010012D4DC} = {076C2C3C-5872-4814-9EB8-B96B41311213}
 		{1814C536-320F-43B3-849F-0DB397B1763F} = {59B2BE14-2EBE-41EB-A489-526EDB09674A}
 		{0B1D02EC-00AE-4EBF-995F-65E6B85A383B} = {076C2C3C-5872-4814-9EB8-B96B41311213}
+		{5126BEC9-91D1-4B86-BA3E-401680A4468A} = {F731CBD0-A8B1-4FA3-B50E-269A8A65E838}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {AA597656-F036-4742-8520-0CD399EFD91C}

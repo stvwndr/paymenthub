@@ -29,7 +29,7 @@ public class CreatePaymentHandler : IRequestHandler<CreatePaymentCommand, PagSeg
     {
         _logger.LogWarning($"Criando novo pagamento -> PagSeguro | TransactionId: {request.TransactionId}");
 
-        //Grava o request na base
+        //TODO: Grava o request na base
 
         var response = await _pagSeguroService.SendPayment((SendPaymentRequestDto)request);
 

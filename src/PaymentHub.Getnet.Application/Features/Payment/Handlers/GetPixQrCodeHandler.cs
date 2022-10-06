@@ -31,9 +31,9 @@ public class GetPixQrCodeHandler : IRequestHandler<GetPixQrCodeCommand, byte[]>
     {
         _logger.LogWarning($"Obtendo novo QRCode para PIX -> Getnet | TransactionId: {request.TransactionId}");
 
-        //Grava o request na base
+        //TODO: Grava o request na base
 
-        var response = await _getnetService.GetPixQrCode((PixRequestDto)request);
+        var response = await _getnetService.GetPixQrCode((GetnetPixRequestDto)request);
 
         _logger.LogWarning($"Resposta criação do QRCode -> Getnet" +
             $" | Houve notificações? {_notificationHandler.HasNotifications}" +

@@ -8,7 +8,7 @@ namespace PaymentHub.Ame.Infra;
 
 public static class ServiceCollectionExtensions
 {
-    public static void AddGetnetInfra(this IServiceCollection services,
+    public static void AddAmeInfra(this IServiceCollection services,
         IConfiguration configuration)
     {
         ArgumentNullException.ThrowIfNull(services, nameof(services));

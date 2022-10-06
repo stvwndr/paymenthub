@@ -7,8 +7,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Dtos\" />
-    <Folder Include="Features\Payment\Handlers\" />
+    <PackageReference Include="MediatR" Version="11.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PaymentHub.Ame.Infra\PaymentHub.Ame.Infra.csproj" />
   </ItemGroup>
 
 </Project>
