@@ -1,0 +1,17 @@
+C:\Users\wander.costa\Documents\Pessoal\Projetos\Pessoal\PucMinas\PaymentHub\src\PaymentHub.PagSeguro.Application\obj\Debug\net6.0\PaymentHub.PagSeguro.Application.csproj.AssemblyReference.cache
+C:\Users\wander.costa\Documents\Pessoal\Projetos\Pessoal\PucMinas\PaymentHub\src\PaymentHub.PagSeguro.Application\obj\Debug\net6.0\PaymentHub.PagSeguro.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\wander.costa\Documents\Pessoal\Projetos\Pessoal\PucMinas\PaymentHub\src\PaymentHub.PagSeguro.Application\obj\Debug\net6.0\PaymentHub.PagSeguro.Application.AssemblyInfoInputs.cache
+C:\Users\wander.costa\Documents\Pessoal\Projetos\Pessoal\PucMinas\PaymentHub\src\PaymentHub.PagSeguro.Application\obj\Debug\net6.0\PaymentHub.PagSeguro.Application.AssemblyInfo.cs
+C:\Users\wander.costa\Documents\Pessoal\Projetos\Pessoal\PucMinas\PaymentHub\src\PaymentHub.PagSeguro.Application\obj\Debug\net6.0\PaymentHub.PagSeguro.Application.csproj.CoreCompileInputs.cache
+C:\Users\wander.costa\Documents\Pessoal\Projetos\Pessoal\PucMinas\PaymentHub\src\PaymentHub.PagSeguro.Application\bin\Debug\net6.0\PaymentHub.PagSeguro.Application.deps.json
+C:\Users\wander.costa\Documents\Pessoal\Projetos\Pessoal\PucMinas\PaymentHub\src\PaymentHub.PagSeguro.Application\bin\Debug\net6.0\PaymentHub.PagSeguro.Application.dll
+C:\Users\wander.costa\Documents\Pessoal\Projetos\Pessoal\PucMinas\PaymentHub\src\PaymentHub.PagSeguro.Application\bin\Debug\net6.0\PaymentHub.PagSeguro.Application.pdb
+C:\Users\wander.costa\Documents\Pessoal\Projetos\Pessoal\PucMinas\PaymentHub\src\PaymentHub.PagSeguro.Application\bin\Debug\net6.0\PaymentHub.Core.dll
+C:\Users\wander.costa\Documents\Pessoal\Projetos\Pessoal\PucMinas\PaymentHub\src\PaymentHub.PagSeguro.Application\bin\Debug\net6.0\PaymentHub.PagSeguro.Infra.dll
+C:\Users\wander.costa\Documents\Pessoal\Projetos\Pessoal\PucMinas\PaymentHub\src\PaymentHub.PagSeguro.Application\bin\Debug\net6.0\PaymentHub.PagSeguro.Infra.pdb
+C:\Users\wander.costa\Documents\Pessoal\Projetos\Pessoal\PucMinas\PaymentHub\src\PaymentHub.PagSeguro.Application\bin\Debug\net6.0\PaymentHub.Core.pdb
+C:\Users\wander.costa\Documents\Pessoal\Projetos\Pessoal\PucMinas\PaymentHub\src\PaymentHub.PagSeguro.Application\obj\Debug\net6.0\PaymentHub.PagSeguro.Application.csproj.CopyComplete
+C:\Users\wander.costa\Documents\Pessoal\Projetos\Pessoal\PucMinas\PaymentHub\src\PaymentHub.PagSeguro.Application\obj\Debug\net6.0\PaymentHub.PagSeguro.Application.dll
+C:\Users\wander.costa\Documents\Pessoal\Projetos\Pessoal\PucMinas\PaymentHub\src\PaymentHub.PagSeguro.Application\obj\Debug\net6.0\refint\PaymentHub.PagSeguro.Application.dll
+C:\Users\wander.costa\Documents\Pessoal\Projetos\Pessoal\PucMinas\PaymentHub\src\PaymentHub.PagSeguro.Application\obj\Debug\net6.0\PaymentHub.PagSeguro.Application.pdb
+C:\Users\wander.costa\Documents\Pessoal\Projetos\Pessoal\PucMinas\PaymentHub\src\PaymentHub.PagSeguro.Application\obj\Debug\net6.0\ref\PaymentHub.PagSeguro.Application.dll

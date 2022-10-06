@@ -1,0 +1,325 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\wander.costa\\Documents\\Pessoal\\Projetos\\Pessoal\\PucMinas\\PaymentHub\\src\\PaymentHub.Getnet.Api\\PaymentHub.Getnet.Api.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\wander.costa\\Documents\\Pessoal\\Projetos\\Pessoal\\PucMinas\\PaymentHub\\src\\PaymentHub.Core\\PaymentHub.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\wander.costa\\Documents\\Pessoal\\Projetos\\Pessoal\\PucMinas\\PaymentHub\\src\\PaymentHub.Core\\PaymentHub.Core.csproj",
+        "projectName": "PaymentHub.Core",
+        "projectPath": "C:\\Users\\wander.costa\\Documents\\Pessoal\\Projetos\\Pessoal\\PucMinas\\PaymentHub\\src\\PaymentHub.Core\\PaymentHub.Core.csproj",
+        "packagesPath": "C:\\Users\\wander.costa\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\wander.costa\\Documents\\Pessoal\\Projetos\\Pessoal\\PucMinas\\PaymentHub\\src\\PaymentHub.Core\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\Offline Packages",
+          "C:\\Program Files\\DevExpress 22.1\\Components\\Offline Packages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\wander.costa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 21.2.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 22.1.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\DevExpress 22.1\\Components\\System\\Components\\Packages": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/woowtechsystem/_packaging/Packages.Woowtech.Dotnet/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.Extensions.Http": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.Extensions.Logging.Abstractions": {
+              "target": "Package",
+              "version": "[6.0.2, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
+            "QRCoder": {
+              "target": "Package",
+              "version": "[1.4.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\wander.costa\\Documents\\Pessoal\\Projetos\\Pessoal\\PucMinas\\PaymentHub\\src\\PaymentHub.Getnet.Api\\PaymentHub.Getnet.Api.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\wander.costa\\Documents\\Pessoal\\Projetos\\Pessoal\\PucMinas\\PaymentHub\\src\\PaymentHub.Getnet.Api\\PaymentHub.Getnet.Api.csproj",
+        "projectName": "PaymentHub.Getnet.Api",
+        "projectPath": "C:\\Users\\wander.costa\\Documents\\Pessoal\\Projetos\\Pessoal\\PucMinas\\PaymentHub\\src\\PaymentHub.Getnet.Api\\PaymentHub.Getnet.Api.csproj",
+        "packagesPath": "C:\\Users\\wander.costa\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\wander.costa\\Documents\\Pessoal\\Projetos\\Pessoal\\PucMinas\\PaymentHub\\src\\PaymentHub.Getnet.Api\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\Offline Packages",
+          "C:\\Program Files\\DevExpress 22.1\\Components\\Offline Packages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\wander.costa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 21.2.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 22.1.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\DevExpress 22.1\\Components\\System\\Components\\Packages": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/woowtechsystem/_packaging/Packages.Woowtech.Dotnet/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\wander.costa\\Documents\\Pessoal\\Projetos\\Pessoal\\PucMinas\\PaymentHub\\src\\PaymentHub.Getnet.Application\\PaymentHub.Getnet.Application.csproj": {
+                "projectPath": "C:\\Users\\wander.costa\\Documents\\Pessoal\\Projetos\\Pessoal\\PucMinas\\PaymentHub\\src\\PaymentHub.Getnet.Application\\PaymentHub.Getnet.Application.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "MediatR.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[11.0.0, )"
+            },
+            "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
+              "target": "Package",
+              "version": "[1.15.1, )"
+            },
+            "Serilog.AspNetCore": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.2.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\wander.costa\\Documents\\Pessoal\\Projetos\\Pessoal\\PucMinas\\PaymentHub\\src\\PaymentHub.Getnet.Application\\PaymentHub.Getnet.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\wander.costa\\Documents\\Pessoal\\Projetos\\Pessoal\\PucMinas\\PaymentHub\\src\\PaymentHub.Getnet.Application\\PaymentHub.Getnet.Application.csproj",
+        "projectName": "PaymentHub.Getnet.Application",
+        "projectPath": "C:\\Users\\wander.costa\\Documents\\Pessoal\\Projetos\\Pessoal\\PucMinas\\PaymentHub\\src\\PaymentHub.Getnet.Application\\PaymentHub.Getnet.Application.csproj",
+        "packagesPath": "C:\\Users\\wander.costa\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\wander.costa\\Documents\\Pessoal\\Projetos\\Pessoal\\PucMinas\\PaymentHub\\src\\PaymentHub.Getnet.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\Offline Packages",
+          "C:\\Program Files\\DevExpress 22.1\\Components\\Offline Packages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\wander.costa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 21.2.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 22.1.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\DevExpress 22.1\\Components\\System\\Components\\Packages": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/woowtechsystem/_packaging/Packages.Woowtech.Dotnet/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\wander.costa\\Documents\\Pessoal\\Projetos\\Pessoal\\PucMinas\\PaymentHub\\src\\PaymentHub.Getnet.Infra\\PaymentHub.Getnet.Infra.csproj": {
+                "projectPath": "C:\\Users\\wander.costa\\Documents\\Pessoal\\Projetos\\Pessoal\\PucMinas\\PaymentHub\\src\\PaymentHub.Getnet.Infra\\PaymentHub.Getnet.Infra.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "MediatR": {
+              "target": "Package",
+              "version": "[11.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\wander.costa\\Documents\\Pessoal\\Projetos\\Pessoal\\PucMinas\\PaymentHub\\src\\PaymentHub.Getnet.Infra\\PaymentHub.Getnet.Infra.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\wander.costa\\Documents\\Pessoal\\Projetos\\Pessoal\\PucMinas\\PaymentHub\\src\\PaymentHub.Getnet.Infra\\PaymentHub.Getnet.Infra.csproj",
+        "projectName": "PaymentHub.Getnet.Infra",
+        "projectPath": "C:\\Users\\wander.costa\\Documents\\Pessoal\\Projetos\\Pessoal\\PucMinas\\PaymentHub\\src\\PaymentHub.Getnet.Infra\\PaymentHub.Getnet.Infra.csproj",
+        "packagesPath": "C:\\Users\\wander.costa\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\wander.costa\\Documents\\Pessoal\\Projetos\\Pessoal\\PucMinas\\PaymentHub\\src\\PaymentHub.Getnet.Infra\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\Offline Packages",
+          "C:\\Program Files\\DevExpress 22.1\\Components\\Offline Packages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\wander.costa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 21.2.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 22.1.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\DevExpress 22.1\\Components\\System\\Components\\Packages": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/woowtechsystem/_packaging/Packages.Woowtech.Dotnet/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\wander.costa\\Documents\\Pessoal\\Projetos\\Pessoal\\PucMinas\\PaymentHub\\src\\PaymentHub.Core\\PaymentHub.Core.csproj": {
+                "projectPath": "C:\\Users\\wander.costa\\Documents\\Pessoal\\Projetos\\Pessoal\\PucMinas\\PaymentHub\\src\\PaymentHub.Core\\PaymentHub.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

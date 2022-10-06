@@ -1,0 +1,17 @@
+C:\Users\wander.costa\Documents\Pessoal\Projetos\Pessoal\PucMinas\PaymentHub\src\PaymentHub.Gateway.Application\bin\Debug\net6.0\PaymentHub.Gateway.Application.deps.json
+C:\Users\wander.costa\Documents\Pessoal\Projetos\Pessoal\PucMinas\PaymentHub\src\PaymentHub.Gateway.Application\bin\Debug\net6.0\PaymentHub.Gateway.Application.dll
+C:\Users\wander.costa\Documents\Pessoal\Projetos\Pessoal\PucMinas\PaymentHub\src\PaymentHub.Gateway.Application\bin\Debug\net6.0\PaymentHub.Gateway.Application.pdb
+C:\Users\wander.costa\Documents\Pessoal\Projetos\Pessoal\PucMinas\PaymentHub\src\PaymentHub.Gateway.Application\bin\Debug\net6.0\PaymentHub.Core.dll
+C:\Users\wander.costa\Documents\Pessoal\Projetos\Pessoal\PucMinas\PaymentHub\src\PaymentHub.Gateway.Application\bin\Debug\net6.0\PaymentHub.Gateway.Infra.dll
+C:\Users\wander.costa\Documents\Pessoal\Projetos\Pessoal\PucMinas\PaymentHub\src\PaymentHub.Gateway.Application\bin\Debug\net6.0\PaymentHub.Gateway.Infra.pdb
+C:\Users\wander.costa\Documents\Pessoal\Projetos\Pessoal\PucMinas\PaymentHub\src\PaymentHub.Gateway.Application\bin\Debug\net6.0\PaymentHub.Core.pdb
+C:\Users\wander.costa\Documents\Pessoal\Projetos\Pessoal\PucMinas\PaymentHub\src\PaymentHub.Gateway.Application\obj\Debug\net6.0\PaymentHub.Gateway.Application.csproj.AssemblyReference.cache
+C:\Users\wander.costa\Documents\Pessoal\Projetos\Pessoal\PucMinas\PaymentHub\src\PaymentHub.Gateway.Application\obj\Debug\net6.0\PaymentHub.Gateway.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\wander.costa\Documents\Pessoal\Projetos\Pessoal\PucMinas\PaymentHub\src\PaymentHub.Gateway.Application\obj\Debug\net6.0\PaymentHub.Gateway.Application.AssemblyInfoInputs.cache
+C:\Users\wander.costa\Documents\Pessoal\Projetos\Pessoal\PucMinas\PaymentHub\src\PaymentHub.Gateway.Application\obj\Debug\net6.0\PaymentHub.Gateway.Application.AssemblyInfo.cs
+C:\Users\wander.costa\Documents\Pessoal\Projetos\Pessoal\PucMinas\PaymentHub\src\PaymentHub.Gateway.Application\obj\Debug\net6.0\PaymentHub.Gateway.Application.csproj.CoreCompileInputs.cache
+C:\Users\wander.costa\Documents\Pessoal\Projetos\Pessoal\PucMinas\PaymentHub\src\PaymentHub.Gateway.Application\obj\Debug\net6.0\PaymentHub.Gateway.Application.csproj.CopyComplete
+C:\Users\wander.costa\Documents\Pessoal\Projetos\Pessoal\PucMinas\PaymentHub\src\PaymentHub.Gateway.Application\obj\Debug\net6.0\PaymentHub.Gateway.Application.dll
+C:\Users\wander.costa\Documents\Pessoal\Projetos\Pessoal\PucMinas\PaymentHub\src\PaymentHub.Gateway.Application\obj\Debug\net6.0\refint\PaymentHub.Gateway.Application.dll
+C:\Users\wander.costa\Documents\Pessoal\Projetos\Pessoal\PucMinas\PaymentHub\src\PaymentHub.Gateway.Application\obj\Debug\net6.0\PaymentHub.Gateway.Application.pdb
+C:\Users\wander.costa\Documents\Pessoal\Projetos\Pessoal\PucMinas\PaymentHub\src\PaymentHub.Gateway.Application\obj\Debug\net6.0\ref\PaymentHub.Gateway.Application.dll

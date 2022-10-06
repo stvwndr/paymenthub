@@ -1,0 +1,15 @@
+C:\Users\wander.costa\Documents\Pessoal\Projetos\Pessoal\PucMinas\PaymentHub\src\PaymentHub.Gateway.Infra\bin\Debug\net6.0\PaymentHub.Gateway.Infra.deps.json
+C:\Users\wander.costa\Documents\Pessoal\Projetos\Pessoal\PucMinas\PaymentHub\src\PaymentHub.Gateway.Infra\bin\Debug\net6.0\PaymentHub.Gateway.Infra.dll
+C:\Users\wander.costa\Documents\Pessoal\Projetos\Pessoal\PucMinas\PaymentHub\src\PaymentHub.Gateway.Infra\bin\Debug\net6.0\PaymentHub.Gateway.Infra.pdb
+C:\Users\wander.costa\Documents\Pessoal\Projetos\Pessoal\PucMinas\PaymentHub\src\PaymentHub.Gateway.Infra\obj\Debug\net6.0\PaymentHub.Gateway.Infra.csproj.AssemblyReference.cache
+C:\Users\wander.costa\Documents\Pessoal\Projetos\Pessoal\PucMinas\PaymentHub\src\PaymentHub.Gateway.Infra\obj\Debug\net6.0\PaymentHub.Gateway.Infra.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\wander.costa\Documents\Pessoal\Projetos\Pessoal\PucMinas\PaymentHub\src\PaymentHub.Gateway.Infra\obj\Debug\net6.0\PaymentHub.Gateway.Infra.AssemblyInfoInputs.cache
+C:\Users\wander.costa\Documents\Pessoal\Projetos\Pessoal\PucMinas\PaymentHub\src\PaymentHub.Gateway.Infra\obj\Debug\net6.0\PaymentHub.Gateway.Infra.AssemblyInfo.cs
+C:\Users\wander.costa\Documents\Pessoal\Projetos\Pessoal\PucMinas\PaymentHub\src\PaymentHub.Gateway.Infra\obj\Debug\net6.0\PaymentHub.Gateway.Infra.csproj.CoreCompileInputs.cache
+C:\Users\wander.costa\Documents\Pessoal\Projetos\Pessoal\PucMinas\PaymentHub\src\PaymentHub.Gateway.Infra\obj\Debug\net6.0\PaymentHub.Gateway.Infra.dll
+C:\Users\wander.costa\Documents\Pessoal\Projetos\Pessoal\PucMinas\PaymentHub\src\PaymentHub.Gateway.Infra\obj\Debug\net6.0\refint\PaymentHub.Gateway.Infra.dll
+C:\Users\wander.costa\Documents\Pessoal\Projetos\Pessoal\PucMinas\PaymentHub\src\PaymentHub.Gateway.Infra\obj\Debug\net6.0\PaymentHub.Gateway.Infra.pdb
+C:\Users\wander.costa\Documents\Pessoal\Projetos\Pessoal\PucMinas\PaymentHub\src\PaymentHub.Gateway.Infra\obj\Debug\net6.0\ref\PaymentHub.Gateway.Infra.dll
+C:\Users\wander.costa\Documents\Pessoal\Projetos\Pessoal\PucMinas\PaymentHub\src\PaymentHub.Gateway.Infra\bin\Debug\net6.0\PaymentHub.Core.dll
+C:\Users\wander.costa\Documents\Pessoal\Projetos\Pessoal\PucMinas\PaymentHub\src\PaymentHub.Gateway.Infra\bin\Debug\net6.0\PaymentHub.Core.pdb
+C:\Users\wander.costa\Documents\Pessoal\Projetos\Pessoal\PucMinas\PaymentHub\src\PaymentHub.Gateway.Infra\obj\Debug\net6.0\PaymentHub.Gateway.Infra.csproj.CopyComplete

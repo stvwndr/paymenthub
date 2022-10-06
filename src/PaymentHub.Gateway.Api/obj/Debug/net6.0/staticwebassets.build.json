@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "nW4NF8OJxy/CtkA8I76FBjuBojl12opfD6soo04yvRI=",
+  "Source": "PaymentHub.Gateway.Api",
+  "BasePath": "_content/PaymentHub.Gateway.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

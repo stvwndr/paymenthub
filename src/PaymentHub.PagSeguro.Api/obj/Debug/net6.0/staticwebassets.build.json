@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "XvhI7C130m6BNxlA04Vvq9xX4EXAkXNV0Ox7BclgV60=",
+  "Source": "PaymentHub.PagSeguro.Api",
+  "BasePath": "_content/PaymentHub.PagSeguro.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

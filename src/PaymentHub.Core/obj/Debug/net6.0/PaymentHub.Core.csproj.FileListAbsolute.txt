@@ -1,0 +1,12 @@
+C:\Users\wander.costa\Documents\Pessoal\Projetos\Pessoal\PucMinas\PaymentHub\src\PaymentHub.Core\bin\Debug\net6.0\PaymentHub.Core.deps.json
+C:\Users\wander.costa\Documents\Pessoal\Projetos\Pessoal\PucMinas\PaymentHub\src\PaymentHub.Core\bin\Debug\net6.0\PaymentHub.Core.dll
+C:\Users\wander.costa\Documents\Pessoal\Projetos\Pessoal\PucMinas\PaymentHub\src\PaymentHub.Core\bin\Debug\net6.0\PaymentHub.Core.pdb
+C:\Users\wander.costa\Documents\Pessoal\Projetos\Pessoal\PucMinas\PaymentHub\src\PaymentHub.Core\obj\Debug\net6.0\PaymentHub.Core.csproj.AssemblyReference.cache
+C:\Users\wander.costa\Documents\Pessoal\Projetos\Pessoal\PucMinas\PaymentHub\src\PaymentHub.Core\obj\Debug\net6.0\PaymentHub.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\wander.costa\Documents\Pessoal\Projetos\Pessoal\PucMinas\PaymentHub\src\PaymentHub.Core\obj\Debug\net6.0\PaymentHub.Core.AssemblyInfoInputs.cache
+C:\Users\wander.costa\Documents\Pessoal\Projetos\Pessoal\PucMinas\PaymentHub\src\PaymentHub.Core\obj\Debug\net6.0\PaymentHub.Core.AssemblyInfo.cs
+C:\Users\wander.costa\Documents\Pessoal\Projetos\Pessoal\PucMinas\PaymentHub\src\PaymentHub.Core\obj\Debug\net6.0\PaymentHub.Core.csproj.CoreCompileInputs.cache
+C:\Users\wander.costa\Documents\Pessoal\Projetos\Pessoal\PucMinas\PaymentHub\src\PaymentHub.Core\obj\Debug\net6.0\PaymentHub.Core.dll
+C:\Users\wander.costa\Documents\Pessoal\Projetos\Pessoal\PucMinas\PaymentHub\src\PaymentHub.Core\obj\Debug\net6.0\refint\PaymentHub.Core.dll
+C:\Users\wander.costa\Documents\Pessoal\Projetos\Pessoal\PucMinas\PaymentHub\src\PaymentHub.Core\obj\Debug\net6.0\PaymentHub.Core.pdb
+C:\Users\wander.costa\Documents\Pessoal\Projetos\Pessoal\PucMinas\PaymentHub\src\PaymentHub.Core\obj\Debug\net6.0\ref\PaymentHub.Core.dll
