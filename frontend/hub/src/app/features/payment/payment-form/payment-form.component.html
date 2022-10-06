@@ -1,0 +1,16 @@
+<form [formGroup]="paymentForm" (ngSubmit)="onSubmit()">            
+    <p>
+        <mat-form-field appearance="fill">
+            <mat-label>Identificador do cliente</mat-label>
+            <input matInput placeholder="pat@example.com" formControlName="customerId">
+            <mat-error *ngIf="isInvalid('customerid') && submited">Informe um e-mail válido.</mat-error>
+        </mat-form-field>
+    </p>
+        <div class="row">
+            <div class="col-sm-2 d-grid">
+                <button id="submit" name="submit" type="submit" class="btn btn-secondary" aria-labelledby="submit">Entrar
+                    <i class="fa fa-solid fa-arrow-right"></i>
+                </button>
+            </div>
+        </div>
+</form>
