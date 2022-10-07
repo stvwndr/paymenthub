@@ -1,16 +1,67 @@
-<form [formGroup]="paymentForm" (ngSubmit)="onSubmit()">            
-    <p>
-        <mat-form-field appearance="fill">
-            <mat-label>Identificador do cliente</mat-label>
-            <input matInput placeholder="pat@example.com" formControlName="customerId">
-            <mat-error *ngIf="isInvalid('customerid') && submited">Informe um e-mail válido.</mat-error>
-        </mat-form-field>
-    </p>
-        <div class="row">
-            <div class="col-sm-2 d-grid">
-                <button id="submit" name="submit" type="submit" class="btn btn-secondary" aria-labelledby="submit">Entrar
-                    <i class="fa fa-solid fa-arrow-right"></i>
+<mat-card id="card" class="card">
+    <mat-card-title>
+        Hub de Pagamentos
+    </mat-card-title>
+
+    <mat-card-subtitle>
+        Selecione um método de pagamento:
+    </mat-card-subtitle>
+
+    <mat-card-content>
+        <mat-grid-list cols="4" rows="1" rowHeight="1:1">
+
+            <mat-grid-tile rowspan="1">
+                <button mat-stroked-button class="payment-button">
+                    <mat-icon class="payment-icon">sports_baseball</mat-icon>
+                    Pagseguro
                 </button>
-            </div>
-        </div>
-</form>
+            </mat-grid-tile>
+        
+            <mat-grid-tile rowspan="1">
+                <button mat-stroked-button class="payment-button">
+                    <mat-icon class="payment-icon">pix</mat-icon>
+                    Pix
+                </button>
+            </mat-grid-tile>
+                
+            <mat-grid-tile rowspan="1">
+                <button mat-stroked-button class="payment-button">
+                    <mat-icon class="payment-icon">card_giftcard</mat-icon>
+                    Cartão-presente
+                </button>
+            </mat-grid-tile>
+        
+            <mat-grid-tile rowspan="1">
+                <button mat-stroked-button class="payment-button">
+                    <mat-icon class="payment-icon">diamond</mat-icon>
+                    Ame
+                </button>
+            </mat-grid-tile>
+        
+        </mat-grid-list>
+
+    </mat-card-content>
+
+</mat-card>
+
+
+<!--
+            <mat-card-content>
+
+            <form [formGroup]="paymentForm" (ngSubmit)="onSubmit()">            
+            <p>
+                <mat-form-field appearance="fill">
+                    <mat-label>Identificador do cliente</mat-label>
+                    <input matInput placeholder="pat@example.com" formControlName="customerId">
+                    <mat-error *ngIf="isInvalid('customerid') && submited">Informe um e-mail válido.</mat-error>
+                </mat-form-field>
+            </p>
+        
+            <button mat-raised-button color="primary" style="margin-right:5px;">Pagar</button>
+        
+            </form>
+        
+        
+            </mat-card-content>
+-->            
+        

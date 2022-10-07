@@ -1,0 +1,22 @@
+.card {
+    text-align: center;
+}
+
+.mat-card-title {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.payment-button {
+    font-size: x-large;
+    font-weight: bold;
+    flex-grow: 1;    
+    height: 70px;
+    background-size: cover;
+  }
+
+.payment-icon {
+    vertical-align: middle;
+    transform: scale(2);
+    padding-right: 5%;
+  }

@@ -5,7 +5,7 @@ import { NotFoundComponent } from './errors/not-found/not-found.component';
 import { PaymentFormComponent } from './features/payment/payment-form/payment-form.component';
 
 const routes: Routes = [
-  { path: "payment/form", component: PaymentFormComponent },
+  { path: "", component: PaymentFormComponent },
   { path: "**", component: NotFoundComponent }
 ];
 
