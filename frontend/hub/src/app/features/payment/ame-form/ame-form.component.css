@@ -1,0 +1,9 @@
+.qrcode {
+    display: flex;
+    justify-content: center;
+}
+  
+ div img {
+    width: 30%;
+}
+

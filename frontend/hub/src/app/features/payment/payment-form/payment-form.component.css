@@ -1,4 +1,4 @@
-.card-align-center {
+.container-align-center {
     text-align: center;
 }
 
@@ -18,10 +18,10 @@
     flex-grow: 1;
     height: 70px;
     background-size: cover;
-  }
+}
 
 .payment-icon {
     vertical-align: middle;
     transform: scale(2);
     padding-right: 5%;
-  }
+}

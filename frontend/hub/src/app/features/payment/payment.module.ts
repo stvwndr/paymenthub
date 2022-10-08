@@ -11,23 +11,27 @@ import { PaymentFormComponent } from './payment-form/payment-form.component';
 import { MatListModule } from '@angular/material/list';
 import { MatIconModule } from '@angular/material/icon';
 import { GiftCardFormComponent } from './gift-card-form/gift-card-form.component';
+import { PagseguroFormComponent } from './pagseguro-form/pagseguro-form.component';
+import { PixFormComponent } from './pix-form/pix-form.component';
+import { AmeFormComponent } from './ame-form/ame-form.component';
 
 @NgModule({
   declarations: [
     PaymentFormComponent,
-    GiftCardFormComponent
+    GiftCardFormComponent,
+    PagseguroFormComponent,
+    PixFormComponent,
+    AmeFormComponent
   ],
   imports: [
     CommonModule,
     FormsModule,
     ReactiveFormsModule,
     MatInputModule,
-    MatDatepickerModule,
     MatButtonModule,
     MatCardModule,
     MatGridListModule,
-    MatListModule,
-    MatIconModule
+    MatIconModule,
   ],
   exports: [
     PaymentFormComponent

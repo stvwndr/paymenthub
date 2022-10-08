@@ -1,4 +1,4 @@
-<mat-card class="card-align-center">
+<mat-card class="container-align-center">
 
     <mat-card-title class="payment-mat-card-title">
         Hub de Pagamentos
@@ -16,28 +16,28 @@
         <mat-grid-list cols="4" rows="1" rowHeight="4:1">
 
             <mat-grid-tile rowspan="1">
-                <button mat-stroked-button class="payment-button">
-                    <mat-icon class="payment-icon">sports_baseball</mat-icon>
-                    Pagseguro
+                <button mat-stroked-button class="payment-button" id="btnCreditCard" (click)="changePaymentForm($event)">
+                    <mat-icon class="payment-icon">credit_card</mat-icon>
+                    Cartão Crédito
                 </button>
             </mat-grid-tile>
         
             <mat-grid-tile rowspan="1">
-                <button mat-stroked-button class="payment-button">
+                <button mat-stroked-button class="payment-button" id="btnPix" (click)="changePaymentForm($event)">
                     <mat-icon class="payment-icon">pix</mat-icon>
                     Pix
                 </button>
             </mat-grid-tile>
                 
             <mat-grid-tile rowspan="1">
-                <button mat-stroked-button class="payment-button">
+                <button mat-stroked-button class="payment-button" id="btnGiftCard" (click)="changePaymentForm($event)">
                     <mat-icon class="payment-icon">card_giftcard</mat-icon>
-                    Cartão-presente
+                    Cartão-Presente
                 </button>
             </mat-grid-tile>
         
             <mat-grid-tile rowspan="1">
-                <button mat-stroked-button class="payment-button">
+                <button mat-stroked-button class="payment-button" id="btnAme" name="abc" (click)="changePaymentForm($event)">
                     <mat-icon class="payment-icon">diamond</mat-icon>
                     Ame
                 </button>
@@ -49,35 +49,20 @@
 
 </mat-card>
 
-<!--
-<mat-card class="card-align-center">
+<div class="container-align-center">
+    <div *ngIf="currentPaymentForm === this.paymentFormEnum.CreditCard">
+        <app-pagseguro-form></app-pagseguro-form> 
+    </div>
 
-    <mat-card-content>
+    <div *ngIf="currentPaymentForm === this.paymentFormEnum.Pix">
+        <app-pix-form></app-pix-form>
+    </div>
 
-    <form [formGroup]="paymentForm">
-        <p>
-            <mat-form-field appearance="fill">
-            
-                <mat-label>Identificador do cartão-presente</mat-label>
-                <input matInput placeholder="9008F6A0-D7B6" formControlName="giftCardNumber">
-                <mat-error *ngIf="isInvalid('giftCardNumber') && submited">Informe um cartão-presente válido.</mat-error>
-            
-            </mat-form-field>
-        </p>
-        <p>
-            <mat-form-field appearance="fill">
-            
-                <mat-label>Total</mat-label>
-                <input matInput placeholder="9008F6A0-D7B6" formControlName="amount">
-                <mat-error *ngIf="isInvalid('amount') && submited">Informe o valor a pagar.</mat-error>
-            
-            </mat-form-field>
-        </p>
-        <button mat-raised-button color="primary">Efetuar Pagamento</button>
+    <div *ngIf="currentPaymentForm === this.paymentFormEnum.GiftCard">
+        <app-gift-card-form></app-gift-card-form> 
+    </div>
 
-    </form>
-
-    </mat-card-content>
-
-</mat-card>
--->
+    <div *ngIf="currentPaymentForm === this.paymentFormEnum.Ame">
+        <app-ame-form></app-ame-form>
+    </div>
+</div>

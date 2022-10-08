@@ -22,6 +22,14 @@ export class PaymentHubService{
         );
     }
 
+    getAmeQrCode(id: string) {
+           
+        return this.http.get<string>(
+            "http://localhost:7080/payment/ame/qrcode/" + id,
+            this.httpHelperService.getHttpHeaderOptions()
+        );
+    }
+    
     createPagSeguroPayment(request: PagSeguroCreatePaymentRequest) {
            
         return this.http.post<PagSeguroCreatePaymentResponse>(

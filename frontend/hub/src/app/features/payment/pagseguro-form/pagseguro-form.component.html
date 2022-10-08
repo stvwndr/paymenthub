@@ -1,0 +1,61 @@
+<mat-card>
+
+    <mat-card-content>
+
+    <form [formGroup]="paymentForm" (ngSubmit)="onSubmit()">            
+        <p>
+            <mat-form-field appearance="fill">
+            
+                <mat-label>Nome</mat-label>
+                <input matInput type="text" placeholder="Ex: JOANA MARIA" formControlName="givenName">
+                <mat-error *ngIf="isInvalid('givenName') && submited">Informe o nome que consta no cartão.</mat-error>
+            
+            </mat-form-field>
+        </p>
+        <p>
+            <mat-form-field appearance="fill">
+            
+                <mat-label>Nº do cartão</mat-label>
+                <input matInput type="number" placeholder="Ex: 1234567890" formControlName="cardNumber">
+                <mat-error *ngIf="isInvalid('cardNumber') && submited">Informe o número do cartão.</mat-error>
+            
+            </mat-form-field>
+        </p>
+
+        <p>
+            <mat-form-field appearance="fill">
+            
+                <mat-label>Válido até</mat-label>
+                <input matInput type="text" placeholder="Ex: 03/25" formControlName="validThru">
+                <mat-error *ngIf="isInvalid('validThru') && submited">Informe a data de validade do cartão.</mat-error>
+            
+            </mat-form-field>
+        </p>
+
+        <p>
+            <mat-form-field appearance="fill">
+            
+                <mat-label>Código de segurança</mat-label>
+                <input matInput type="number" placeholder="Ex: 123" formControlName="code">
+                <mat-error *ngIf="isInvalid('code') && submited">Informe o código de segurança do cartão.</mat-error>
+            
+            </mat-form-field>
+        </p>
+
+        <p>
+            <mat-form-field appearance="fill">
+            
+                <mat-label>Total</mat-label>
+                <input matInput type="number" placeholder="Ex: 0,00" formControlName="amount">
+                <mat-error *ngIf="isInvalid('amount') && submited">Informe o valor a pagar.</mat-error>
+            
+            </mat-form-field>
+        </p>
+
+        <button mat-raised-button color="primary">Efetuar Pagamento</button>
+
+    </form>
+
+    </mat-card-content>
+
+</mat-card>

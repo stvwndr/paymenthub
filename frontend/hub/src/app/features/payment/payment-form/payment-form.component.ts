@@ -1,8 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
-import { PagSeguroCreatePaymentRequest } from 'src/app/models/payment-model';
-import { PaymentHubService } from 'src/app/services/payment-hub.service';
+import { PaymentFormEnum } from 'src/app/models/payment-enums';
 
 @Component({
   selector: 'app-payment-form',
@@ -13,38 +12,40 @@ export class PaymentFormComponent implements OnInit {
 
   paymentForm!: FormGroup;
   submited: boolean = false;
-  
+  currentPaymentForm!: PaymentFormEnum;
+  paymentFormEnum!: typeof PaymentFormEnum;
+
   constructor(
     private formBuilder: FormBuilder
   ) { }
 
   ngOnInit(): void {
     
+    this.currentPaymentForm = PaymentFormEnum.CreditCard;
+    this.paymentFormEnum = PaymentFormEnum;
     this.paymentForm = this.formBuilder.group({
       customerId: ['', [Validators.required]],
     });
   }
 
-  
+  changePaymentForm(event: Event): void {
+        
+    var target = (event.currentTarget as Element);
 
-  mapToPixQrCode(): string {
-
-    return this.paymentForm.get('customerId')?.value;
+    switch (target.id) {
+      case "btnPix":
+        this.currentPaymentForm = PaymentFormEnum.Pix;
+        break;
+      case "btnGiftCard":
+        this.currentPaymentForm = PaymentFormEnum.GiftCard;
+        break;
+      case "btnAme":
+        this.currentPaymentForm = PaymentFormEnum.Ame;
+        break;
+      default:
+        this.currentPaymentForm = PaymentFormEnum.CreditCard;
+        break;
+    }
   }
 
-  mapToPagSeguroCreatePaymentRequest(): PagSeguroCreatePaymentRequest {
-
-    return {
-      givenName: this.paymentForm.get('givenName')?.value,
-      validThru: this.paymentForm.get('validThru')?.value,
-      cardNumber: this.paymentForm.get('cardNumber')?.value,
-      code: this.paymentForm.get('code')?.value,
-      amount: this.paymentForm.get('amount')?.value
-    } as PagSeguroCreatePaymentRequest;
-  }
-
-  isInvalid(controlName: string): boolean {
-
-    return this.submited && this.paymentForm.get(controlName)?.errors != null;
-  }
 }
