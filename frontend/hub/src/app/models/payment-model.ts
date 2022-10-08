@@ -11,3 +11,8 @@ export interface PagSeguroCreatePaymentResponse {
     status: string;
     amount: number;
 }
+
+export interface AmeGiftCardPaymentRequest {
+    giftCardNumber: string;
+    amount: number;
+}

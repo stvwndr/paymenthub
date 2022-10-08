@@ -2,7 +2,7 @@ import { HttpClient } from "@angular/common/http";
 import { Injectable } from "@angular/core";
 
 import { HttpHelperService } from "../core/services/http-helper-service";
-import { PagSeguroCreatePaymentRequest, PagSeguroCreatePaymentResponse } from "../models/payment-model";
+import { AmeGiftCardPaymentRequest, PagSeguroCreatePaymentRequest, PagSeguroCreatePaymentResponse } from "../models/payment-model";
 
 @Injectable({
     providedIn: 'root' 
@@ -26,6 +26,15 @@ export class PaymentHubService{
            
         return this.http.post<PagSeguroCreatePaymentResponse>(
             "http://localhost:7080/payment/pagseguro", 
+            request,
+            this.httpHelperService.getHttpHeaderOptions()
+        );
+    }
+
+    createGiftCardPayment(request: AmeGiftCardPaymentRequest) {
+           
+        return this.http.post<AmeGiftCardPaymentRequest>(
+            "http://localhost:7080/payment/ame/giftcard", 
             request,
             this.httpHelperService.getHttpHeaderOptions()
         );

@@ -1,16 +1,21 @@
-.card {
+.card-align-center {
     text-align: center;
 }
 
-.mat-card-title {
+.payment-mat-card-title {
+    font-size: xx-large;
     padding-top: 30px;
     padding-bottom: 30px;
+}
+
+.payment-mat-card-subtitle {
+    font-size: x-large;
 }
 
 .payment-button {
     font-size: x-large;
     font-weight: bold;
-    flex-grow: 1;    
+    flex-grow: 1;
     height: 70px;
     background-size: cover;
   }

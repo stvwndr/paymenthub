@@ -15,7 +15,6 @@ export class PaymentFormComponent implements OnInit {
   submited: boolean = false;
   
   constructor(
-    private paymentHubService: PaymentHubService,
     private formBuilder: FormBuilder
   ) { }
 
@@ -26,34 +25,7 @@ export class PaymentFormComponent implements OnInit {
     });
   }
 
-  onSubmit(): void {
-
-    this.submited = true;
-
-    if (this.paymentForm.invalid) { return; }
-
-    const id = this.mapToPixQrCode();
-
-    if (id != null)
-    {
-      this.paymentHubService.getPixQrCode(id)
-        .subscribe(
-          data => console.log('QrCode retornado com sucesso: ' + data),
-          error => console.log('--->>>>>' + error.error.details[0].message)
-        )
-
-    }
-/*
-    if (eventFormModel.id == null)
-    {
-      this.eventService.create(eventFormModel)
-        .subscribe(
-          data => console.log('Evento criado com sucesso: ' + data.id),
-          error => console.log('--->>>>>' + error.error.details[0].message)
-        );
-    }
-*/    
-  }
+  
 
   mapToPixQrCode(): string {
 

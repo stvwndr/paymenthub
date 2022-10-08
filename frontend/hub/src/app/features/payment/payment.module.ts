@@ -10,10 +10,12 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { PaymentFormComponent } from './payment-form/payment-form.component';
 import { MatListModule } from '@angular/material/list';
 import { MatIconModule } from '@angular/material/icon';
+import { GiftCardFormComponent } from './gift-card-form/gift-card-form.component';
 
 @NgModule({
   declarations: [
-    PaymentFormComponent
+    PaymentFormComponent,
+    GiftCardFormComponent
   ],
   imports: [
     CommonModule,

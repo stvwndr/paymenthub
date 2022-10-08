@@ -1,0 +1,31 @@
+<mat-card class="card-align-center">
+
+    <mat-card-content>
+
+    <form [formGroup]="paymentForm" (ngSubmit)="onSubmit()">            
+        <p>
+            <mat-form-field appearance="fill">
+            
+                <mat-label>Identificador do cartão-presente</mat-label>
+                <input matInput placeholder="9008F6A0-D7B6" formControlName="giftCardNumber">
+                <mat-error *ngIf="isInvalid('giftCardNumber') && submited">Informe um cartão-presente válido.</mat-error>
+            
+            </mat-form-field>
+        </p>
+        <p>
+            <mat-form-field appearance="fill">
+            
+                <mat-label>Total</mat-label>
+                <input matInput placeholder="9008F6A0-D7B6" formControlName="amount">
+                <mat-error *ngIf="isInvalid('amount') && submited">Informe o valor a pagar.</mat-error>
+            
+            </mat-form-field>
+        </p>
+
+        <button mat-raised-button color="primary">Efetuar Pagamento</button>
+
+    </form>
+
+    </mat-card-content>
+
+</mat-card>
