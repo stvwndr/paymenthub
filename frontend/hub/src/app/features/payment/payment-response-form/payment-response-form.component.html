@@ -1,0 +1,21 @@
+    <mat-card-subtitle class="payment-mat-card-subtitle">
+        Pagamento realizado com sucesso!
+    </mat-card-subtitle>
+
+    <mat-card-content>
+        <br/>    
+        <h3>
+            <span class="field-bold field-size-large">Identificador: </span>
+            <span class="field-size-large">{{paymentResponse.paymentId}}</span>
+        </h3>
+        <h3>
+            <span class="field-bold field-size-large">Status: </span>
+            <span class="field-size-large">{{paymentResponse.status}}</span>
+        </h3>
+        <h3>
+            <span class="field-bold field-size-large">Total: </span>
+            <span class="field-size-large">{{paymentResponse.amount}}</span>
+        </h3>
+
+    </mat-card-content>
+

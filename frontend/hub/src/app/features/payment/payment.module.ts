@@ -12,6 +12,7 @@ import { GiftCardFormComponent } from './gift-card-form/gift-card-form.component
 import { PagseguroFormComponent } from './pagseguro-form/pagseguro-form.component';
 import { PixFormComponent } from './pix-form/pix-form.component';
 import { AmeFormComponent } from './ame-form/ame-form.component';
+import { PaymentResponseFormComponent } from './payment-response-form/payment-response-form.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { AmeFormComponent } from './ame-form/ame-form.component';
     GiftCardFormComponent,
     PagseguroFormComponent,
     PixFormComponent,
-    AmeFormComponent
+    AmeFormComponent,
+    PaymentResponseFormComponent
   ],
   imports: [
     CommonModule,

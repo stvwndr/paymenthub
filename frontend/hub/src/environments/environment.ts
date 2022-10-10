@@ -4,7 +4,8 @@
 
 export const environment = {
   production: false,
-  paymentHubGatewayApi: "http://localhost:5100"
+  paymentHubGatewayApi: "http://localhost:5100",
+  auth: "Basic YWRtaW46NFhxMDR6YW9UIWMwMSgn"
 };
 
 /*

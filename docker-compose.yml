@@ -10,6 +10,8 @@ services:
       - PAYMENT_HUB_AME_URL=http://payment-hub-ame-api
       - PAYMENT_HUB_GETNET_URL=http://payment-hub-getnet-api
       - PAYMENT_HUB_PAGSEGURO_URL=http://payment-hub-pagseguro-api
+      - PAYMENT_HUB_ACCESS_KEY=GEwYo8D0Bs8=
+      - PAYMENT_HUB_SECRET_KEY=cvhLt2cas6gn9O0lBpBwhw==
     expose:
       - "80"
     ports:
@@ -26,8 +28,9 @@ services:
     build:
       context: .
       dockerfile: ./backend/src/PaymentHub.Ame.Api/Dockerfile
-#    environment:
-#      - ConnectionString=Server=sqldata;Initial Catalog=CatalogData;User Id=sa;Password=[PLACEHOLDER]
+    environment:
+      - PAYMENT_HUB_ACCESS_KEY=GEwYo8D0Bs8=
+      - PAYMENT_HUB_SECRET_KEY=cvhLt2cas6gn9O0lBpBwhw==
     expose:
       - "80"
     ports:
@@ -42,8 +45,9 @@ services:
     build:
       context: .
       dockerfile: ./backend/src/PaymentHub.Getnet.Api/Dockerfile
-#    environment:
-#      - ConnectionString=Server=sqldata;Initial Catalog=CatalogData;User Id=sa;Password=[PLACEHOLDER]
+    environment:
+      - PAYMENT_HUB_ACCESS_KEY=GEwYo8D0Bs8=
+      - PAYMENT_HUB_SECRET_KEY=cvhLt2cas6gn9O0lBpBwhw==
     expose:
       - "80"
     ports:
@@ -58,8 +62,9 @@ services:
     build:
       context: .
       dockerfile: ./backend/src/PaymentHub.PagSeguro.Api/Dockerfile
-#    environment:
-#      - ConnectionString=Server=sqldata;Initial Catalog=CatalogData;User Id=sa;Password=[PLACEHOLDER]
+    environment:
+      - PAYMENT_HUB_ACCESS_KEY=GEwYo8D0Bs8=
+      - PAYMENT_HUB_SECRET_KEY=cvhLt2cas6gn9O0lBpBwhw==
     expose:
       - "80"
     ports:
@@ -82,10 +87,3 @@ services:
       - payment-hub-gateway-api
     container_name: payment-hub-frontend
     hostname: payment-hub-frontend
-   
-#  sqldata:
-#    environment:
-#      - SA_PASSWORD=[PLACEHOLDER]
-#      - ACCEPT_EULA=Y
-#    ports:
-#      - "5434:1433"

@@ -2,30 +2,46 @@
 
     <mat-card-content>
 
-    <form [formGroup]="paymentForm" (ngSubmit)="onSubmit()">            
-        <p>
-            <mat-form-field appearance="fill">
+        <div>
+    
+            <div *ngIf="paymentResponse">
             
-                <mat-label>Identificador do cartão-presente</mat-label>
-                <input matInput type="text" placeholder="Ex: 9008F6A0-D7B6" formControlName="giftCardNumber">
-                <mat-error *ngIf="isInvalid('giftCardNumber') && submited">Informe um cartão-presente válido.</mat-error>
+                <app-payment-response-form 
+                    [paymentResponse]="paymentResponse">
+                </app-payment-response-form>
             
-            </mat-form-field>
-        </p>
-        <p>
-            <mat-form-field appearance="fill">
-            
-                <mat-label>Total</mat-label>
-                <input matInput type="number" placeholder="Ex: 0,00" formControlName="amount">
-                <mat-error *ngIf="isInvalid('amount') && submited">Informe o valor a pagar.</mat-error>
-            
-            </mat-form-field>
-        </p>
+            </div>
 
-        <button mat-raised-button color="primary">Efetuar Pagamento</button>
+            <div *ngIf="!paymentResponse">
 
-    </form>
+                <form [formGroup]="paymentForm" (ngSubmit)="onSubmit()">            
+                    <p>
+                        <mat-form-field appearance="fill">
+                        
+                            <mat-label>Identificador do cartão-presente</mat-label>
+                            <input matInput type="text" placeholder="Ex: 9008F6A0-D7B6" formControlName="giftCardNumber">
+                            <mat-error *ngIf="isInvalid('giftCardNumber') && submited">Informe um cartão-presente válido.</mat-error>
+                        
+                        </mat-form-field>
+                    </p>
+                    <p>
+                        <mat-form-field appearance="fill">
+                        
+                            <mat-label>Total</mat-label>
+                            <input matInput type="number" placeholder="Ex: 0,00" formControlName="amount">
+                            <mat-error *ngIf="isInvalid('amount') && submited">Informe o valor a pagar.</mat-error>
+                        
+                        </mat-form-field>
+                    </p>
 
+                    <button mat-raised-button color="primary">Efetuar Pagamento</button>
+
+                </form>
+
+            </div>
+    
+        </div>
+    
     </mat-card-content>
 
 </mat-card>

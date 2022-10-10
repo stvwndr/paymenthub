@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.Configuration;
+﻿using Microsoft.AspNetCore.Http;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using PaymentHub.Gateway.Infra.Services;
 using PaymentHub.Gateway.Infra.Services.Interfaces;
@@ -13,6 +14,8 @@ public static class ServiceCollectionExtensions
     {
         ArgumentNullException.ThrowIfNull(services, nameof(services));
         ArgumentNullException.ThrowIfNull(configuration, nameof(configuration));
+
+        services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 
         services.AddHttpClient<IPaymentHubPagSeguroService, PaymentHubPagSeguroService>(c =>
         {

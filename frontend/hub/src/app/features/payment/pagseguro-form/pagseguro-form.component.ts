@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
-import { PagSeguroCreatePaymentRequest } from 'src/app/models/payment-model';
+import { PagSeguroCreatePaymentRequest, PaymentHubResponse } from 'src/app/models/payment-model';
 import { PaymentHubService } from 'src/app/services/payment-hub.service';
 
 @Component({
@@ -12,6 +12,7 @@ import { PaymentHubService } from 'src/app/services/payment-hub.service';
 export class PagseguroFormComponent implements OnInit {
 
   paymentForm!: FormGroup;
+  paymentResponse!: PaymentHubResponse;
   submited: boolean = false;
 
   constructor(    
@@ -42,7 +43,14 @@ export class PagseguroFormComponent implements OnInit {
     {
       this.paymentHubService.createPagSeguroPayment(pagSeguroPayment)
         .subscribe(
-          data => console.log('Pagamento com cartão realizado com sucesso: ' + data),
+          data => {
+            this.paymentResponse = {
+              paymentId: data.paymentId,
+              status: data.status,
+              amount: data.amount
+            };
+            console.log('Pagamento com cartão realizado com sucesso: ' + data);            
+        },
           error => console.log('--->>>>>' + error.error.details[0].message)
         )
     }
@@ -52,7 +60,7 @@ export class PagseguroFormComponent implements OnInit {
 
     return {
       givenName: this.paymentForm.get('givenName')?.value,
-      cardNumber: this.paymentForm.get('cardNumber')?.value,
+      cardNumber: this.paymentForm.get('cardNumber')?.value.toString(),
       validThru: this.paymentForm.get('validThru')?.value,
       code: this.paymentForm.get('code')?.value,
       amount: this.paymentForm.get('amount')?.value

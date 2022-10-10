@@ -4,3 +4,9 @@ export enum PaymentFormEnum {
     GiftCard,
     Ame
 }
+
+export enum PaymentStatus
+{
+    Authorized,
+    Denied
+}

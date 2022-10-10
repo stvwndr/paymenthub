@@ -1,6 +1,10 @@
 using MediatR;
+using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.OpenApi.Models;
 using PaymentHub.Core;
+using PaymentHub.Core.Auth;
 using PaymentHub.Core.Notifications.Interfaces;
 using PaymentHub.PagSeguro.Application.Features.Payment.Commands;
 using PaymentHub.PagSeguro.Infra;
@@ -10,11 +14,25 @@ using System.Text.Json.Serialization;
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+builder.Services.AddSwaggerGen(c =>
+    c.AddSecurityDefinition("Basic", new OpenApiSecurityScheme
+    {
+        Description = "Basic",
+        Name = "Authorization",
+        In = ParameterLocation.Header,
+        Type = SecuritySchemeType.ApiKey,
+        Scheme = "Basic"
+    })
+);
 
 builder.Services.AddPaymentHubCore();
 builder.Services.AddPagSeguroInfra(builder.Configuration);
 builder.Services.AddMediatR(typeof(CreatePaymentCommand).Assembly);
+
+builder.Services
+    .AddAuthentication("BasicAuthentication")
+    .AddScheme<AuthenticationSchemeOptions, BasicAuthenticationHandler>("BasicAuthentication", null);
+builder.Services.AddAuthorization();
 
 builder.Services.Configure<Microsoft.AspNetCore.Http.Json.JsonOptions>(options =>
 {
@@ -38,23 +56,24 @@ builder.Services.AddCors(options =>
 
 var app = builder.Build();
 
-if (app.Environment.IsDevelopment())
+app.UseSwagger();
+app.UseSwaggerUI(opt =>
 {
-    app.UseSwagger();
-    app.UseSwaggerUI(opt =>
-    {
-        opt.SwaggerEndpoint("/swagger/v1/swagger.json",
-            "PaymentHub PagSeguro Api v1");
-    });
-}
-else
+    opt.SwaggerEndpoint("/swagger/v1/swagger.json",
+        "PaymentHub PagSeguro Api v1");
+});
+
+
+if (!app.Environment.IsDevelopment())
 {
     app.UseHttpsRedirection();
 }
 
+app.UseAuthentication();
+app.UseAuthorization();
 app.UseCors("AllowAll");
 
-app.MapPost("/payment", async (
+app.MapPost("/payment", [Authorize] async (
     [FromBody] CreatePaymentCommand command, 
     [FromServices] IMediator mediator, 
     [FromServices] INotificationHandler notificationHandler) =>

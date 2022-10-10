@@ -10,17 +10,20 @@ namespace PaymentHub.Ame.Infra.Services;
 
 public class AmeService : BaseHttpService, IAmeService
 {
+    private readonly HttpClient _httpClient;
+
     public AmeService(HttpClient httpClient,
         ILogger<AmeService> logger,
         INotificationHandler notificationHandler)
         : base(httpClient, logger, notificationHandler)
     {
+        _httpClient = httpClient;
     }
 
     public Task<byte[]> GetQrCode(AmeQrCodeRequestDto request)
     {
         return Task.FromResult(QrCodeFactory.GenerateQrCode(
-            $"?customerid={request.CustomerId}"
+            $"{_httpClient.BaseAddress}?customerid={request.CustomerId}"
             ));
     }
 

@@ -3,7 +3,7 @@ import { Injectable } from "@angular/core";
 
 import { environment } from "src/environments/environment";
 import { HttpHelperService } from "../core/services/http-helper-service";
-import { AmeGiftCardPaymentRequest, PagSeguroCreatePaymentRequest, PagSeguroCreatePaymentResponse } from "../models/payment-model";
+import { AmeGiftCardPaymentRequest, AmeGiftCardPaymentResponse, PagSeguroCreatePaymentRequest, PagSeguroCreatePaymentResponse } from "../models/payment-model";
 
 @Injectable({
     providedIn: 'root' 
@@ -42,7 +42,7 @@ export class PaymentHubService{
 
     createGiftCardPayment(request: AmeGiftCardPaymentRequest) {
            
-        return this.http.post<AmeGiftCardPaymentRequest>(
+        return this.http.post<AmeGiftCardPaymentResponse>(
             environment.paymentHubGatewayApi + "/payment/ame/giftcard", 
             request,
             this.httpHelperService.getHttpHeaderOptions()

@@ -9,17 +9,20 @@ namespace PaymentHub.Getnet.Infra.Services;
 
 public class GetnetService : BaseHttpService, IGetnetService
 {
+    private readonly HttpClient _httpClient;
+
     public GetnetService(HttpClient httpClient,
         ILogger<GetnetService> logger,
         INotificationHandler notificationHandler)
         : base(httpClient, logger, notificationHandler)
     {
+        _httpClient = httpClient;
     }
    
     public Task<byte[]> GetPixQrCode(GetnetPixRequestDto requestDto)
     {
         return Task.FromResult(QrCodeFactory.GenerateQrCode(
-            $"?customerid={requestDto.CustomerId}"
+            $"{_httpClient.BaseAddress}?customerid={requestDto.CustomerId}"
             ));
     }
 }

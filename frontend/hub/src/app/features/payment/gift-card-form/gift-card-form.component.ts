@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 import { PaymentHubService } from 'src/app/services/payment-hub.service';
-import { AmeGiftCardPaymentRequest } from 'src/app/models/payment-model';
+import { AmeGiftCardPaymentRequest, PaymentHubResponse } from 'src/app/models/payment-model';
 
 @Component({
   selector: 'app-gift-card-form',
@@ -12,6 +12,7 @@ import { AmeGiftCardPaymentRequest } from 'src/app/models/payment-model';
 export class GiftCardFormComponent implements OnInit {
 
   paymentForm!: FormGroup;
+  paymentResponse!: PaymentHubResponse;
   submited: boolean = false;
 
   constructor(    
@@ -39,7 +40,14 @@ export class GiftCardFormComponent implements OnInit {
     {
       this.paymentHubService.createGiftCardPayment(giftCard)
         .subscribe(
-          data => console.log('Pagamento com cartão-presente realizado com sucesso: ' + data),
+          data => {
+            this.paymentResponse = {
+              paymentId: data.paymentId,
+              status: data.status,
+              amount: data.amount
+            };
+            console.log('Pagamento com cartão-presente realizado com sucesso: ' + data);            
+        },
           error => console.log('--->>>>>' + error.error.details[0].message)
         )
     }
