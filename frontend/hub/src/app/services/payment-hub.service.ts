@@ -1,6 +1,7 @@
 import { HttpClient } from "@angular/common/http";
 import { Injectable } from "@angular/core";
 
+import { environment } from "src/environments/environment";
 import { HttpHelperService } from "../core/services/http-helper-service";
 import { AmeGiftCardPaymentRequest, PagSeguroCreatePaymentRequest, PagSeguroCreatePaymentResponse } from "../models/payment-model";
 
@@ -17,7 +18,7 @@ export class PaymentHubService{
     getPixQrCode(id: string) {
            
         return this.http.get<string>(
-            "http://localhost:7080/payment/pix/qrcode/" + id,
+            environment.paymentHubGatewayApi + "/payment/pix/qrcode/" + id,
             this.httpHelperService.getHttpHeaderOptions()
         );
     }
@@ -25,7 +26,7 @@ export class PaymentHubService{
     getAmeQrCode(id: string) {
            
         return this.http.get<string>(
-            "http://localhost:7080/payment/ame/qrcode/" + id,
+            environment.paymentHubGatewayApi + "/payment/ame/qrcode/" + id,
             this.httpHelperService.getHttpHeaderOptions()
         );
     }
@@ -33,7 +34,7 @@ export class PaymentHubService{
     createPagSeguroPayment(request: PagSeguroCreatePaymentRequest) {
            
         return this.http.post<PagSeguroCreatePaymentResponse>(
-            "http://localhost:7080/payment/pagseguro", 
+            environment.paymentHubGatewayApi + "/payment/pagseguro", 
             request,
             this.httpHelperService.getHttpHeaderOptions()
         );
@@ -42,7 +43,7 @@ export class PaymentHubService{
     createGiftCardPayment(request: AmeGiftCardPaymentRequest) {
            
         return this.http.post<AmeGiftCardPaymentRequest>(
-            "http://localhost:7080/payment/ame/giftcard", 
+            environment.paymentHubGatewayApi + "/payment/ame/giftcard", 
             request,
             this.httpHelperService.getHttpHeaderOptions()
         );

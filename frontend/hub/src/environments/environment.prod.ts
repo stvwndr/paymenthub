@@ -1,3 +1,4 @@
 export const environment = {
-  production: true
+  production: true,
+  paymentHubGatewayApi: "http://payment-hub-gateway-api"
 };

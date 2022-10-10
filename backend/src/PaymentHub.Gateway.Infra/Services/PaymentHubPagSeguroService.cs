@@ -16,11 +16,11 @@ public class PaymentHubPagSeguroService : BaseHttpService, IPaymentHubPagSeguroS
     {
     }
 
-    private string _sendPaymentUri => "payment";
+    private string _sendPaymentUrl => "payment";
 
     public async Task<PagSeguroCreatePaymentResponseDto> SendPayment(JObject data)
     {
-        return await SendAsync<PagSeguroCreatePaymentResponseDto>(_sendPaymentUri, 
+        return await SendAsync<PagSeguroCreatePaymentResponseDto>(_sendPaymentUrl, 
             HttpMethod.Post, 
             data);
     }

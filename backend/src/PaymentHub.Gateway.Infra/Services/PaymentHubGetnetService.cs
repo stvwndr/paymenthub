@@ -15,13 +15,13 @@ public class PaymentHubGetnetService : BaseHttpService, IPaymentHubGetnetService
     {
     }
 
-    private string _getQrCodeUri(Guid transactionId, Guid customerId) 
+    private string _getQrCodeUrl(Guid transactionId, Guid customerId) 
         => $"pix-qrcode/{transactionId}/{customerId}";
 
     public async Task<JToken> GetQrCodePix(Guid transactionId, Guid customerId)
     {
         return await SendAsync<JToken>(
-            _getQrCodeUri(transactionId, customerId),
+            _getQrCodeUrl(transactionId, customerId),
             HttpMethod.Get);
     }
 }

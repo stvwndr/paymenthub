@@ -17,7 +17,7 @@ public static class ServiceCollectionExtensions
         services.AddHttpClient<IAmeService, AmeService>(c =>
         {
             c.DefaultRequestHeaders.Accept.Clear();
-            c.BaseAddress = new Uri(configuration["Services:AmeUri"]);
+            c.BaseAddress = new Uri(configuration["Services:AmeUrl"]);
             c.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
         });
     }

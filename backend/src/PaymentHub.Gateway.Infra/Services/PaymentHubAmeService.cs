@@ -16,14 +16,14 @@ public class PaymentHubAmeService : BaseHttpService, IPaymentHubAmeService
     {
     }
 
-    private string _getQrCodeUri(Guid transactionId, Guid customerId)
+    private string _getQrCodeUrl(Guid transactionId, Guid customerId)
         => $"qrcode/{transactionId}/{customerId}";
     private string _sendGiftCardPayment => $"payment/giftcard";
 
     public async Task<JToken> GetQrCode(Guid transactionId, Guid customerId)
     {
         return await SendAsync<JToken>(
-            _getQrCodeUri(transactionId, customerId),
+            _getQrCodeUrl(transactionId, customerId),
             HttpMethod.Get);
     }
 

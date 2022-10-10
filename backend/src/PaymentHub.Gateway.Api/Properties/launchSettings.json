@@ -4,7 +4,7 @@
     "windowsAuthentication": false,
     "anonymousAuthentication": true,
     "iisExpress": {
-      "applicationUrl": "http://localhost:51332",
+      "applicationUrl": "http://localhost:5100",
       "sslPort": 44377
     }
   },
@@ -17,16 +17,8 @@
         "Serilog:MinimumLevel": "Debug"
       },
       "launchUrl": "swagger",
-      "applicationUrl": "http://localhost:7080;http://localhost:5080",
+      "applicationUrl": "http://localhost:5100/;http://0.0.0.0:5100",
       "dotnetRunMessages": true
-    },
-    "IIS Express": {
-      "commandName": "IISExpress",
-      "launchBrowser": true,
-      "launchUrl": "swagger",
-      "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development"
-      }
     },
     "Docker": {
       "commandName": "Docker",

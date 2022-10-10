@@ -17,7 +17,7 @@ public static class ServiceCollectionExtensions
         services.AddHttpClient<IGetnetService, GetnetService>(c =>
         {
             c.DefaultRequestHeaders.Accept.Clear();
-            c.BaseAddress = new Uri(configuration["Services:GetnetUri"]);
+            c.BaseAddress = new Uri(configuration["Services:GetnetUrl"]);
             c.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
         });
     }

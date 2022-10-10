@@ -16,22 +16,28 @@ public static class ServiceCollectionExtensions
 
         services.AddHttpClient<IPaymentHubPagSeguroService, PaymentHubPagSeguroService>(c =>
         {
+            var url = Environment.GetEnvironmentVariable("PAYMENT_HUB_PAGSEGURO_URL")
+                ?? configuration["Services:PaymentHubPagSeguroUrl"];
             c.DefaultRequestHeaders.Accept.Clear();
-            c.BaseAddress = new Uri(configuration["Services:PaymentHubPagSeguroUri"]);
+            c.BaseAddress = new Uri(url);
             c.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
         });
 
         services.AddHttpClient<IPaymentHubGetnetService, PaymentHubGetnetService>(c =>
         {
+            var url = Environment.GetEnvironmentVariable("PAYMENT_HUB_GETNET_URL")
+                ?? configuration["Services:PaymentHubGetnetUrl"];
             c.DefaultRequestHeaders.Accept.Clear();
-            c.BaseAddress = new Uri(configuration["Services:PaymentHubGetnetUri"]);
+            c.BaseAddress = new Uri(url);
             c.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
         });
 
         services.AddHttpClient<IPaymentHubAmeService, PaymentHubAmeService>(c =>
         {
+            var url = Environment.GetEnvironmentVariable("PAYMENT_HUB_AME_URL")
+                ?? configuration["Services:PaymentHubAmeUrl"];
             c.DefaultRequestHeaders.Accept.Clear();
-            c.BaseAddress = new Uri(configuration["Services:PaymentHubAmeUri"]);
+            c.BaseAddress = new Uri(url);
             c.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
         });
     }

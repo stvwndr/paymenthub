@@ -17,12 +17,10 @@ public class AmeService : BaseHttpService, IAmeService
     {
     }
 
-    private const string _ameQrCodeUri = "https://www.amedigital.com/";
-
     public Task<byte[]> GetQrCode(AmeQrCodeRequestDto request)
     {
         return Task.FromResult(QrCodeFactory.GenerateQrCode(
-            $"{_ameQrCodeUri}?customerid={request.CustomerId}"
+            $"?customerid={request.CustomerId}"
             ));
     }
 

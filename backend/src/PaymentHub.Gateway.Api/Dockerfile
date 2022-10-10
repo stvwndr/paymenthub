@@ -1,16 +1,16 @@
 #See https://aka.ms/containerfastmode to understand how Visual Studio uses this Dockerfile to build your images for faster debugging.
 
-FROM mcr.microsoft.com/dotnet/aspnet:6.0 AS base
+FROM mcr.microsoft.com/dotnet/aspnet:6.0-bullseye-slim AS base
 WORKDIR /app
 EXPOSE 80
 EXPOSE 443
 
-FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
+FROM mcr.microsoft.com/dotnet/sdk:6.0-bullseye-slim AS build
 WORKDIR /src
-COPY ["PaymentHub.Gateway.Api/PaymentHub.Gateway.Api.csproj", "PaymentHub.Gateway.Api/"]
-RUN dotnet restore "PaymentHub.Gateway.Api/PaymentHub.Gateway.Api.csproj"
+COPY ["backend/src/PaymentHub.Gateway.Api/PaymentHub.Gateway.Api.csproj", "backend/src/PaymentHub.Gateway.Api/"]
+RUN dotnet restore "backend/src/PaymentHub.Gateway.Api/PaymentHub.Gateway.Api.csproj"
 COPY . .
-WORKDIR "/src/PaymentHub.Gateway.Api"
+WORKDIR "/src/backend/src/PaymentHub.Gateway.Api"
 RUN dotnet build "PaymentHub.Gateway.Api.csproj" -c Release -o /app/build
 
 FROM build AS publish

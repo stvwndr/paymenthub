@@ -1,0 +1,91 @@
+version: '3.4'
+
+services:
+  payment-hub-gateway-api:
+    image: payment-hub-gateway-api
+    build:
+      context: .
+      dockerfile: ./backend/src/PaymentHub.Gateway.Api/Dockerfile
+    environment:
+      - PAYMENT_HUB_AME_URL=http://payment-hub-ame-api
+      - PAYMENT_HUB_GETNET_URL=http://payment-hub-getnet-api
+      - PAYMENT_HUB_PAGSEGURO_URL=http://payment-hub-pagseguro-api
+    expose:
+      - "80"
+    ports:
+      - "5100:80"
+    depends_on:
+      - payment-hub-ame-api
+      - payment-hub-getnet-api
+      - payment-hub-pagseguro-api
+    container_name: payment-hub-gateway-api
+    hostname: payment-hub-gateway-api
+
+  payment-hub-ame-api:
+    image: payment-hub-ame-api
+    build:
+      context: .
+      dockerfile: ./backend/src/PaymentHub.Ame.Api/Dockerfile
+#    environment:
+#      - ConnectionString=Server=sqldata;Initial Catalog=CatalogData;User Id=sa;Password=[PLACEHOLDER]
+    expose:
+      - "80"
+    ports:
+      - "5101:80"
+    container_name: payment-hub-ame-api
+    hostname: payment-hub-ame-api
+#    depends_on:
+#      - sqldata
+
+  payment-hub-getnet-api:
+    image: payment-hub-getnet-api
+    build:
+      context: .
+      dockerfile: ./backend/src/PaymentHub.Getnet.Api/Dockerfile
+#    environment:
+#      - ConnectionString=Server=sqldata;Initial Catalog=CatalogData;User Id=sa;Password=[PLACEHOLDER]
+    expose:
+      - "80"
+    ports:
+      - "5102:80"
+    container_name: payment-hub-getnet-api
+    hostname: payment-hub-getnet-api
+#    depends_on:
+#      - sqldata
+
+  payment-hub-pagseguro-api:
+    image: payment-hub-pagseguro-api
+    build:
+      context: .
+      dockerfile: ./backend/src/PaymentHub.PagSeguro.Api/Dockerfile
+#    environment:
+#      - ConnectionString=Server=sqldata;Initial Catalog=CatalogData;User Id=sa;Password=[PLACEHOLDER]
+    expose:
+      - "80"
+    ports:
+      - "5103:80"
+    container_name: payment-hub-pagseguro-api
+    hostname: payment-hub-pagseguro-api
+#    depends_on:
+#      - sqldata
+
+  payment-hub-frontend:
+    image: payment-hub-frontend
+    build:
+      context: .
+      dockerfile: ./frontend/hub/Dockerfile
+    expose:
+      - "80"
+    ports:
+      - 5000:80
+    depends_on:
+      - payment-hub-gateway-api
+    container_name: payment-hub-frontend
+    hostname: payment-hub-frontend
+   
+#  sqldata:
+#    environment:
+#      - SA_PASSWORD=[PLACEHOLDER]
+#      - ACCEPT_EULA=Y
+#    ports:
+#      - "5434:1433"

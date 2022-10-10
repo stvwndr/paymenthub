@@ -17,7 +17,7 @@ public static class ServiceCollectionExtensions
         services.AddHttpClient<IPagSeguroService, PagSeguroService>(c =>
         {
             c.DefaultRequestHeaders.Accept.Clear();
-            c.BaseAddress = new Uri(configuration["Services:PagSeguroUri"]);
+            c.BaseAddress = new Uri(configuration["Services:PagSeguroUrl"]);
             c.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
         });
     }
