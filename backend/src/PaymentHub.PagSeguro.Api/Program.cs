@@ -9,6 +9,7 @@ using PaymentHub.Core.Notifications.Interfaces;
 using PaymentHub.PagSeguro.Application.Features.Payment.Commands;
 using PaymentHub.PagSeguro.Infra;
 using Serilog;
+using Serilog.Sinks.Elasticsearch;
 using System.Text.Json.Serialization;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -41,10 +42,26 @@ builder.Services.Configure<Microsoft.AspNetCore.Http.Json.JsonOptions>(options =
 });
 
 builder.Logging.ClearProviders();
-var logger = new LoggerConfiguration()
-    .WriteTo.Console()
-    .CreateLogger();
-builder.Logging.AddSerilog(logger);
+var loggerBuilder = new LoggerConfiguration()
+    .Enrich.WithProperty("Creation", DateTime.UtcNow)
+    .Enrich.FromLogContext()
+    .WriteTo.Console();
+
+if (Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT") == Environments.Production)
+{
+    loggerBuilder
+        .MinimumLevel.Warning()
+        .WriteTo.Elasticsearch(new ElasticsearchSinkOptions(
+        new Uri(Environment.GetEnvironmentVariable("PAYMENT_HUB_ELASTICSEARCH_URL")
+            ?? builder.Configuration["Services:ElasticConfiguration"])
+        )
+        {
+            AutoRegisterTemplate = true,
+            ConnectionTimeout = new TimeSpan(0, 0, 10),
+            IndexFormat = $"paymenthub-pagseguro-prod-{DateTime.UtcNow:yyyy-MM}"
+        });
+}
+builder.Logging.AddSerilog(loggerBuilder.CreateLogger());
 
 builder.Services.AddCors(options =>
 {
