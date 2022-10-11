@@ -6,12 +6,12 @@ A ideia é a implementação de um ecossistema de microsserviços que realize a 
 Para tanto, os microsserviços foram desenvolvidos utilizando-se Net 6 e uma aplicação de página única foi criada através do Angular.
 
 
-
-
 ![image](https://user-images.githubusercontent.com/48540242/195189478-f9194c17-7a84-47a2-853d-69f316bf6111.png)
 
 
-Uma prova de conceito (POC) foi desenvolvida tendo em vista os principais requisitos de arquitetura e encontra-se atualmente disponível no seguinte endereço:
+Uma prova de conceito (POC) foi desenvolvida tendo em vista os principais requisitos de arquitetura e, embora represente a interação com adquirentes e empresas do ramo de pagamentos, a interface real com os sistemas dessas empresas não foi contemplada no escopo desse trabalho.
+
+Atualmente, a POC encontra-se disponível no seguinte endereço:
 
 http://52.224.86.238/
 
