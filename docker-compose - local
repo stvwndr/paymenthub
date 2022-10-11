@@ -2,6 +2,7 @@ version: '3.4'
 
 services:
   payment-hub-gateway-api:
+    #image: payment-hub-gateway-api
     image: acrpaymenthubstvwndr.azurecr.io/payment-hub-gateway-api
     build:
       context: .
@@ -15,7 +16,8 @@ services:
     expose:
       - "80"
     ports:
-      - "5100:80"
+      #- "5100:80"
+      - "5100:5100"
     depends_on:
       - payment-hub-ame-api
       - payment-hub-getnet-api
@@ -24,6 +26,7 @@ services:
     hostname: payment-hub-gateway-api
 
   payment-hub-ame-api:
+    #image: payment-hub-ame-api
     image: acrpaymenthubstvwndr.azurecr.io/payment-hub-ame-api
     build:
       context: .
@@ -34,11 +37,15 @@ services:
     expose:
       - "80"
     ports:
-      - "5101:80"
+      #- "5101:80"
+      - "5101:5101"
     container_name: payment-hub-ame-api
     hostname: payment-hub-ame-api
+#    depends_on:
+#      - sqldata
 
   payment-hub-getnet-api:
+    #image: payment-hub-getnet-api
     image: acrpaymenthubstvwndr.azurecr.io/payment-hub-getnet-api
     build:
       context: .
@@ -49,11 +56,15 @@ services:
     expose:
       - "80"
     ports:
-      - "5102:80"
+      #- "5102:80"
+      - "5102:5102"
     container_name: payment-hub-getnet-api
     hostname: payment-hub-getnet-api
+#    depends_on:
+#      - sqldata
 
   payment-hub-pagseguro-api:
+    #image: payment-hub-pagseguro-api
     image: acrpaymenthubstvwndr.azurecr.io/payment-hub-pagseguro-api
     build:
       context: .
@@ -64,11 +75,15 @@ services:
     expose:
       - "80"
     ports:
-      - "5103:80"
+      #- "5103:80"
+      - "5103:5103"
     container_name: payment-hub-pagseguro-api
     hostname: payment-hub-pagseguro-api
+#    depends_on:
+#      - sqldata
 
   payment-hub-frontend:
+    #image: payment-hub-frontend
     image: acrpaymenthubstvwndr.azurecr.io/payment-hub-frontend
     build:
       context: .
@@ -76,7 +91,8 @@ services:
     expose:
       - "80"
     ports:
-      - "5000:80"
+      #- 5000:80
+      - "80:80"
     depends_on:
       - payment-hub-gateway-api
     container_name: payment-hub-frontend

@@ -1,0 +1,16 @@
+version: '3.4'
+
+services:
+  payment-hub-frontend:
+    image: acrpaymenthubstvwndr.azurecr.io/payment-hub-frontend
+    build:
+      context: .
+      dockerfile: ././frontend/hub/Dockerfile
+    environment:
+      - PAYMENT_HUB_GATEWAY_URL=http://20.124.46.36
+    expose:
+      - "80"
+    ports:
+      - "80:80"
+    container_name: payment-hub-frontend
+    hostname: payment-hub-frontend

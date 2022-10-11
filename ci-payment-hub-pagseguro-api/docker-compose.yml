@@ -1,0 +1,17 @@
+version: '3.4'
+
+services:
+  payment-hub-pagseguro-api:
+    image: acrpaymenthubstvwndr.azurecr.io/payment-hub-pagseguro-api
+    build:
+      context: .
+      dockerfile: ././backend/src/PaymentHub.PagSeguro.Api/Dockerfile
+    environment:
+      - PAYMENT_HUB_ACCESS_KEY=GEwYo8D0Bs8=
+      - PAYMENT_HUB_SECRET_KEY=cvhLt2cas6gn9O0lBpBwhw==
+    expose:
+      - "80"
+    ports:
+      - "80:80"
+    container_name: payment-hub-pagseguro-api
+    hostname: payment-hub-pagseguro-api

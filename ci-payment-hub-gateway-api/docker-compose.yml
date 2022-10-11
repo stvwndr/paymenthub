@@ -1,0 +1,20 @@
+version: '3.4'
+
+services:
+  payment-hub-gateway-api:
+    image: acrpaymenthubstvwndr.azurecr.io/payment-hub-gateway-api
+    build:
+      context: .
+      dockerfile: ././backend/src/PaymentHub.Gateway.Api/Dockerfile
+    environment:
+      - PAYMENT_HUB_AME_URL=http://20.237.61.123
+      - PAYMENT_HUB_GETNET_URL=http://4.236.218.207
+      - PAYMENT_HUB_PAGSEGURO_URL=http://20.232.62.205
+      - PAYMENT_HUB_ACCESS_KEY=GEwYo8D0Bs8=
+      - PAYMENT_HUB_SECRET_KEY=cvhLt2cas6gn9O0lBpBwhw==
+    expose:
+      - "80"
+    ports:
+      - "80:80"
+    container_name: payment-hub-gateway-api
+    hostname: payment-hub-gateway-api
