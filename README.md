@@ -11,7 +11,7 @@ Para tanto, os microsserviços foram desenvolvidos utilizando-se Net 6 e uma apl
 
 Uma prova de conceito (POC) foi desenvolvida tendo em vista os principais requisitos de arquitetura e, embora represente a interação com adquirentes e empresas do ramo de pagamentos, a interface real com os sistemas dessas empresas não foi contemplada no escopo desse trabalho.
 
-Atualmente, a POC encontra-se disponível no seguinte endereço:
+Atualmente, a POC se encontra disponível no seguinte endereço:
 
 http://52.224.86.238/
 
