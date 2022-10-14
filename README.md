@@ -15,7 +15,7 @@ Atualmente, a POC encontra-se disponível no seguinte endereço:
 
 http://52.224.86.238/
 
-A documentação das APIs encontram em:
+As documentações das APIs se encontram em:
 
 http://20.124.46.36/swagger/index.html
 
