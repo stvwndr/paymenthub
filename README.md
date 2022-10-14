@@ -17,10 +17,14 @@ http://52.224.86.238/
 
 A documentação das APIs encontram em:
 
-[http://20.124.46.36/swagger/index.html]
-[http://20.237.61.123/swagger/index.html]
-[http://4.236.218.207/swagger/index.html]
-[http://20.232.62.205/swagger/index.html]
+http://20.124.46.36/swagger/index.html
+
+http://20.237.61.123/swagger/index.html
+
+http://4.236.218.207/swagger/index.html
+
+http://20.232.62.205/swagger/index.html
+
 
 
 ![image](https://user-images.githubusercontent.com/48540242/195924313-0a8cf3fb-b1a6-4ec8-9255-d8c515e10cbb.png)
