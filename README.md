@@ -29,3 +29,9 @@ http://20.232.62.205/swagger/index.html
 
 ![image](https://user-images.githubusercontent.com/48540242/195924313-0a8cf3fb-b1a6-4ec8-9255-d8c515e10cbb.png)
 
+
+
+OBS: 09-11-2022
+Infelizmente, minha conta de estudante do Azure expirou e as publicações que realizei não estão mais disponíveis.
+
+![image](https://user-images.githubusercontent.com/48540242/200929301-e83f3a58-5463-48a2-95d6-c884b6434715.png)
